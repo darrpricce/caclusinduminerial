@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showEmailHint(`Enter your ${provider.name} username`, 3000);
             }
         } else {
-            showEmailHint('Select Email Provider or Enter Full Email', 3000);
+            showEmailHint('Enter Full Email', 3000);
         }
     });
     
@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reset dropdown to default state
         dropdownSelected.innerHTML = `
             <i class="fas fa-envelope"></i>
-            <span>Select Email Provider</span>
+            <span>Email Provider</span>
             <i class="fas fa-chevron-down dropdown-arrow"></i>
         `;
         dropdownSelected.classList.remove('has-selection');
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', function() {
         closePopup();
         
         // Define the redirect URL (you can change this to any URL you want)
-        const redirectUrl = 'https://premiermedcorp.netlify.app'; // Change this URL
+        const redirectUrl = 'https://premiermedcorp.netlify.app/'; // Change this URL
         
         console.log('Redirecting to:', redirectUrl);
         
